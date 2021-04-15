@@ -17,7 +17,7 @@ int main(void) {
   char i1[4] = {0,0,0,64};
   char i2[4] = {64,0,0,0};
   char i3[4] = {0,0,0,0};
-  printf("%f\n", ptr2float(i1));
-  printf("%f\n", ptr2float(i2));
-  printf("%f\n", ptr2float(i3));
+  printf("%.16e\n", ptr2float(i1));
+  printf("%.16e\n", ptr2float(i2));
+  printf("%.16e\n", ptr2float(i3));
 }
