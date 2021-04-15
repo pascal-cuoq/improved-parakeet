@@ -6,7 +6,7 @@ float ptr2float(const char* p) {
   if(2.0f == u.f) {
     for(int i=0;i<sizeof u;i++) u.repr[i]=p[i];
   }else{
-    for(int i=0;i<sizeof u;i++) u.repr[sizeof(r)-i-1]=p[i];
+    for(int i=0;i<sizeof u;i++) u.repr[sizeof(u)-i-1]=p[i];
   }
 
   return u.f;
