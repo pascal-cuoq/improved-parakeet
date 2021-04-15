@@ -1,6 +1,6 @@
 
 float ptr2float(const char* p) {
-  _Static_assert(sizeof (float) == 4);
+  _Static_assert(sizeof (float) == 4, "float must be represented with 4 chars");
   union { char repr[4]; float f; } u = {0,0,0,64};
 
   if(2.0f == u.f) {
